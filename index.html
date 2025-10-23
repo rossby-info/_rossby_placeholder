@@ -14,12 +14,12 @@
 
 <body>
     <main>
-        <div class="centered">
+        <div class="centered flex-wrapper">
             <p>Rossby.info's taking a break (<b>as of 10.22.2025</b>). Reach out to <a rel="nofollow noopener noreferrer"
                     href="mailto:admin@rossby.info">admin@rossby.info</a> for info, questions, and data requests in the meantime.</p>
         </div>
 
-        <div class="centered">
+        <div class="centered flex-wrapper">
             <p>What we accomplished so far:</p>
             <ul>
                 <li>
@@ -29,7 +29,7 @@
                     ~1K consistent users across all the Tools/Services
                 </li>
                 <li>
-                    10K's users using the site regularly, intermittently, or one-off
+                    ~10K's users using the site regularly, intermittently, or one-off
                 </li>
                 <li>
                     among the most accurate Zip Code, Location data
@@ -62,12 +62,21 @@
         height: 100%;
         top: 0;
         left: 0;
+        overflow-y: hidden;
+        overflow-x: hidden;
 
         background: black;
     }
 
     body>main {
-        width: 100%;
+        position: relative;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+
+    .flex-wrapper {
         flex-wrap: wrap;
         display: flex;
     }
@@ -79,8 +88,6 @@
     }
 
     body>main>div {
-        position: relative;
-        top: 250px;
         flex-wrap: wrap;
         display: flex;
         color: wheat;
@@ -99,6 +106,8 @@
 
     body>main>div>p>a {
         color: whitesmoke;
+        text-decoration: none;
+        border-bottom: 2px solid deeppink;
     }
 
     body>main>div>ul {
@@ -111,5 +120,6 @@
         padding-bottom: 5px;
         margin-bottom: 5px;
         color: whitesmoke;
+        text-transform: lowercase;
     }
 </style>
